@@ -29,7 +29,7 @@ const LOADER_CONFIG = defineConfig("opencode-loader", {
 
 defineReadme({
   description:
-    "TUI launcher and `oc` shell command for [OpenCode](https://github.com/sst/opencode). When loaded as an OpenCode plugin it installs an `oc` command into your shell; running `oc` opens an interactive TUI for switching between projects, managing plugins, and signing in to providers. It also drives [plugin-updater](https://github.com/intisy-ai/plugin-updater) on startup so all your git-based plugins stay current.",
+    "TUI launcher and `oc` shell command for [OpenCode](https://github.com/sst/opencode). When loaded as an OpenCode plugin it installs an `oc` command into your shell; running `oc` opens an interactive TUI for switching between projects, managing plugins, and signing in to providers. It also drives [plugin-updater](https://github.com/forebay/plugin-updater) on startup so all your git-based plugins stay current.",
   architecture: `flowchart TD
     START[OpenCode startup] -->|activate| PLUGIN[plugin.js]
     PLUGIN -->|earlyLaunch| UPDATER[plugin-updater]
@@ -64,7 +64,7 @@ defineReadme({
         "When using plugin-updater, add this entry to `~/.config/opencode/config/plugins.json`:",
         "",
         "```json",
-        '{ "name": "opencode-loader", "url": "https://github.com/intisy-ai/opencode-loader", "enabled": true, "autoUpdate": true }',
+        '{ "name": "opencode-loader", "url": "https://github.com/forebay/opencode-loader", "enabled": true, "autoUpdate": true }',
         "```",
         "Restart OpenCode; the updater clones, builds and loads it.",
         "",

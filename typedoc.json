@@ -23,7 +23,7 @@
   "tsconfig": "./tsconfig.json",
   "externalSymbolLinkMappings": {
     "@intisy-ai/basekit": {
-      "*": "https://github.com/intisy-ai/basekit"
+      "*": "https://github.com/forebay/basekit"
     }
   },
   "entryPoints": [
@@ -34,7 +34,7 @@
     "src/proxy-boot.ts"
   ],
   "name": "opencode-loader",
-  "sourceLinkTemplate": "https://github.com/intisy-ai/opencode-loader/blob/{gitRevision}/{path}#L{line}",
+  "sourceLinkTemplate": "https://github.com/forebay/opencode-loader/blob/{gitRevision}/{path}#L{line}",
   "intentionallyNotExported": [
     "CapabilityOwner",
     "ManifestLike",

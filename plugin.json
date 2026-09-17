@@ -35,7 +35,7 @@
     },
     "loader": {
       "id": "opencode-loader",
-      "url": "intisy-ai/opencode-loader"
+      "url": "forebay/opencode-loader"
     },
     "commandsSubdir": "command",
     "proxyPort": 34568,

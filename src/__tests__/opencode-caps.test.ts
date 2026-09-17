@@ -24,8 +24,8 @@ describe("ownerOfCapability", () => {
   });
 
   it("carries the url the home has for it, so an absent clone can still be installed", () => {
-    expect(ownerOfCapability(manifests, "custom-endpoints", (id) => `https://github.com/intisy-ai/${id}`))
-      .toEqual({ id: "endpoints", url: "https://github.com/intisy-ai/endpoints" });
+    expect(ownerOfCapability(manifests, "custom-endpoints", (id) => `https://github.com/forebay/${id}`))
+      .toEqual({ id: "endpoints", url: "https://github.com/forebay/endpoints" });
   });
 
   it("takes the first declarer, in the order the home reported them", () => {
