@@ -10,4 +10,5 @@ export const standard: LoaderStandard = {
   },
   pathCommands: { requested: ["oc"], minimum: 1 },
   background: [],
+  plugins: [],
 };

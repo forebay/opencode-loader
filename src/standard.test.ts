@@ -23,6 +23,7 @@ const RULED_STANDARD = {
   },
   pathCommands: { requested: ["oc"], minimum: 1 },
   background: [],
+  plugins: [],
 };
 
 let base: string;
