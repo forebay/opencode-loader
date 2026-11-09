@@ -5,6 +5,7 @@ import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { standard } from "./standard.js";
 
 const REPOSITORY_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const HOST_BUNDLE = join(REPOSITORY_ROOT, "dist", "host");
@@ -20,6 +21,7 @@ const RULED_STANDARD = {
     binary: "opencode",
     home: { envOverride: "HUB_OPENCODE_DIR", nativeEnv: "OPENCODE_CONFIG_DIR", xdgSubdir: "opencode", candidates: ["~/.config/opencode", "~/.opencode"] },
     packages: { npm: "opencode-ai" },
+    entry: standard.application.entry,
   },
   pathCommands: { requested: ["oc"], minimum: 1 },
   background: [],
