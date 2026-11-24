@@ -17,8 +17,6 @@
   },
   "include": ["src/**/*"],
   "exclude": [
-    "src/**/*.test.ts",
-    "src/proxy.ts",
-    "src/proxy-boot.ts"
+    "src/**/*.test.ts"
   ]
 }
